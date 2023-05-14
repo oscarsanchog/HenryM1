@@ -10,6 +10,7 @@ function BinarioADecimal(num) {
    return suma
 }
 
+
 function DecimalABinario(num) {
    let binario = []
    while (num >= 1) {
