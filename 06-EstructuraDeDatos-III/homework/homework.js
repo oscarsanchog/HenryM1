@@ -51,10 +51,17 @@ BinarySearchTree.prototype.size = function () {
 
 BinarySearchTree.prototype.contains = function (value) {
    if (this.value === value) return true
+   if (value < this.value && this.left && this.left.contains(value)) return true // la primera condición hace al algoritmo más eficiente, porque no busca donde obviamente no está el nodo.
+   if (value > this.value && this.right && this.right.contains(value)) return true
+   return false
+}
+
+/* BinarySearchTree.prototype.contains = function (value) {
+   if (this.value === value) return true
    if (this.left && this.left.contains(value)) return true
    if (this.right && this.right.contains(value)) return true
    return false
-}
+} */
 
 //! FUNCIÓN DEPTHFIRSTFOR EACH
 //* El objetivo es recorrer el árbol en el orden indicado, ejecutando la cb, pasando por parámetro el valor del nodo, y la forma de recorrerlo.
