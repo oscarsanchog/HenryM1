@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest repaso-M1.test.js"
+    "test": "jest --collectCoverage=false repaso-M1.test.js"
   },
   "author": "",
   "license": "ISC",
