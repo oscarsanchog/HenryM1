@@ -1,6 +1,8 @@
 'use strict'
 // No cambies los nombres de las funciones.
 
+//! Iteración
+
 function factorear(num) {
   // Factorear el número recibido como parámetro y devolver en un array
   // los factores por los cuales se va dividiendo a dicho número (De menor a mayor)
